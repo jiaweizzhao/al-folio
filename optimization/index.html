@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Jiawei Zhao">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Optimization in Deep Learning</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    
+<!--<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>Album</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+-->
+<main>
+
+  <section class="py-5 container">
+    <div class="row py-lg-5">
+      <div class="col-lg-10 col-md-12 mx-auto text-center">
+        <h1 class="fw-light">Optimization in Deep Learning</h1>
+          <br><br>
+        <!--<p class="lead text-muted"> Zongyi Li, Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, <br> Kaushik Bhattacharya, Andrew Stuart, Anima Anandkumar </p>-->
+        <!--<img src="img/ns_sr_v1e-4_labelled.gif"  class="img-fluid" alt="...">-->
+        <!--        <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>-->
+      </div>
+      <div class="col-lg-10 col-md-12 mx-auto">
+        <br><br>
+        <!--        <h3>Abstract</h3>-->
+        <p> 
+          Will be updated soon.
+        </p>
+      </div>
+    </div>
+  </section>
+    
+  <div class="album py-5">
+    <div class="container">
+      <div class="col-lg-10 col-md-12 mx-auto">
+        <h2>List of optimizers and their applications</h2>
+        <br>
+        
+        <h4> 1. Madam Optimizer: Multiplicative Weight Update <a href="https://arxiv.org/abs/2006.14560">[link]</a> </h4>
+        <i class="lead text-muted"> Jeremy Bernstein, Jiawei Zhao, Markus Meister, Ming-Yu Liu, Anima Anandkumar, Yisong Yue </i>
+        <p class="lead text-muted"> We propose a multiplicative weight update method Madam - a multiplicative version of the Adam optimizer. 
+          We prove that multiplicative weight updates satisfy a descent lemma tailored to compositional functions. 
+          Our empirical results show that Madam can train state-of-the-art neural network architectures without learning rate tuning. </p>
+        <img class="img-fluid" src="img/lr-compare.jpg" class="rounded mx-auto d-block">
+
+
+        <h4> 2. LNS-Madam: Low-Precision Training with Multiplicative Weight Update  <a href="https://arxiv.org/abs/2106.13914">[link]</a> </h4>
+        <i class="lead text-muted"> Jiawei Zhao, Steve Dai, Rangharajan Venkatesan, Ming-Yu Liu, Brucek Khailany, Bill Dally, Anima Anandkumar </i>
+        <p class="lead text-muted"> We develop a co-designed low-precision training framework LNS-Madam, in which we jointly design the logarithmic number system (LNS) and the multiplicative weight update algorithm Madam. We prove that Madam induces less quantization error as it directly updates the weights in a logarithmic representation. Thus, training with Madam leads to a stable convergence even if precision is strongly limited. </p>
+        <img class="img-fluid" src="img/LNS-Madam.jpg" class="rounded mx-auto d-block">
+
+
+        <h4> 3. signSGD Optimizer: Sign-based Stochastic Gradient Descent <a href="https://arxiv.org/abs/1802.04434">[link]</a> </h4>
+        <i class="lead text-muted"> Jeremy Bernstein, Yu-Xiang Wang, Kamyar Azizzadenesheli, Anima Anandkumar </i>
+        <p class="lead text-muted"> We propose signSGD that updates the weights only using the sign of each minibatch stochastic gradient. Through theoretical analysis, we prove that signSGD matches the SGD-level convergence rate. On the practical side, we find that the momentum counterpart of signSGD is able to match the accuracy and convergence speed of Adam on deep Imagenet models. </p>
+        <img src="img/signsgd_results.png" height="300" class="rounded mx-auto d-block">
+
+
+        <h4> 4. signSGD with Majority Vote: Distributed Learning using signSGD Algorithm <a href="https://arxiv.org/abs/1810.05291">[link]</a> </h4>
+        <i class="lead text-muted"> Jeremy Bernstein, Jiawei Zhao, Kamyar Azizzadenesheli, Anima Anandkumar </i>
+        <p class="lead text-muted"> We propose signSGD with majority vote - a robust, communication-efficient learning algorithm for distributed learning. Workers transmit only the sign of their gradient vector to a server, and the overall update is decided by a majority vote. This algorithm uses 32× less communication per iteration than full-precision, distributed SGD. Benchmarking against the state-of-the-art collective communications library (NCCL), our framework leads to a 25% reduction in time for training resnet50 on Imagenet when using 15 AWS p3.2xlarge machines. </p>
+        <img src="img/breakdown.jpg" height="300" class="rounded mx-auto d-block">
+
+
+        <h4> 5. CGD Optimizer: Competitive Gradient Descent  <a href="https://arxiv.org/abs/1905.12103">[link]</a> </h4>
+        <i class="lead text-muted"> Florian Schäfer, Anima Anandkumar, Houman Owhadi </i>
+
+        <h4> 6. Competitive Gradient Descent for GAN Training <a href="https://arxiv.org/abs/1910.05852">[link]</a> </h4>
+        <i class="lead text-muted"> Florian Schäfer, Hongkai Zheng, Anima Anandkumar </i>
+
+        <h4> 7. Polymatrix Competitive Gradient Descent <a href="https://arxiv.org/abs/2111.08565">[link]</a> </h4>
+        <i class="lead text-muted"> Jeffrey Ma, Alistair Letcher, Florian Schäfer, Yuanyuan Shi, Anima Anandkumar </i>
+
+      </div>
+    </div>
+  </div>
+  
+
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
