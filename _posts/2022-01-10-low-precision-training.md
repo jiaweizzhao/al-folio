@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Low-Precision Training in Logarithmic Number System using Multiplicative Weight Update
+title: Low-Precision Training with Multiplicative Weight Update Algorithm Madam
 date: 2022-01-10 21:01:00
 description: none
 categories: projects
