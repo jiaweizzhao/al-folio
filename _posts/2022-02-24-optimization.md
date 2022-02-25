@@ -25,9 +25,17 @@ We propose signSGD that updates the weights only using the sign of each minibatc
 
 ### LNS-Madam: Low-Precision Training in Logarithmic Number System using Multiplicative Weight Update [(link)](https://arxiv.org/abs/2106.13914)
 
+<div class="col-sm mt-3 mt-md-0 mx-auto" style="max-width: 400px;">
+    {% include figure.html path="assets/img/add_vs_mul.jpg" class="img-fluid" %}
+</div>
+
 We develop a co-designed low-precision training framework LNS-Madam, in which we jointly design the logarithmic number system (LNS) and the multiplicative weight update algorithm Madam. We prove that Madam induces less quantization error as it directly updates the weights in a logarithmic representation. Thus, training with Madam leads to a stable convergence even if precision is strongly limited. 
 
 ### signSGD with Majority Vote: Distributed Learning using signSGD Algorithm [(link)](https://arxiv.org/abs/1810.05291)
+
+<div class="col-sm mt-3 mt-md-0 mx-auto" style="max-width: 400px;">
+    {% include figure.html path="assets/img/breakdown.jpg" class="img-fluid" %}
+</div>
 
 We propose signSGD with majority vote - a robust, communication-efficient learning algorithm for distributed learning. Workers transmit only the sign of their gradient vector to a server, and the overall update is decided by a majority vote. This algorithm uses 32× less communication per iteration than full-precision, distributed SGD. Benchmarking against the state-of-the-art collective communications library (NCCL), our framework leads to a 25% reduction in time for training resnet50 on Imagenet when using 15 AWS p3.2xlarge machines.
 
