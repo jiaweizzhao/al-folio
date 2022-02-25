@@ -11,7 +11,7 @@ Optimization is an important concept in deep learning as the optimization algori
 In this page, we introduce recent works on optimization published by our group, where the works are categorized by their topics. 
 
 
-# Learning Algorithms in General Deep Learning
+# Learning Algorithms for Deep Learning
 
 ### Madam Optimizer - Multiplicative Weight Update for Deep Learning [(link)](https://arxiv.org/abs/2006.14560)
 
@@ -33,7 +33,7 @@ We develop a co-designed low-precision training framework LNS-Madam, in which we
 
 ### signSGD with Majority Vote: Distributed Learning using signSGD Algorithm [(link)](https://arxiv.org/abs/1810.05291)
 
-<div class="col-sm mt-3 mt-md-0 mx-auto" style="max-width: 400px;">
+<div class="col-sm mt-3 mt-md-0 mx-auto" style="max-width: 450px;">
     {% include figure.html path="assets/img/breakdown.jpg" class="img-fluid" %}
 </div>
 
