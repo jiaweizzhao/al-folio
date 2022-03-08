@@ -6,12 +6,14 @@ description: none
 categories: projects
 ---
 
-Optimization is an important concept in deep learning as the optimization algorithms strongly affect the quality of the networks after training. Non-convex analysis is one of the key issues due to the non-convex landscape of the optimization problem in deep learning. As the learning becomes computationally expensive, there is a growing attention to resource constraint optimization, which aims to reduce the resource consumption during training while preserving the quality of the solutions. In addition, more optimization algorithms should be developed for specific scenarios, such as multi-agent setting. 
+Optimization is an essential concept in deep learning as the learning algorithms primarily affect the quality of the learned networks. This page introduces our group's recent works on optimization, which are categorized by their topics. 
 
-In this page, we introduce recent works on optimization published by our group, where the works are categorized by their topics. 
+<!-- In addition, we study the optimization problems under different scenarios, such as multi-agent optimization and policy optimization. -->
+
 
 
 # Learning Algorithms for Deep Learning
+Due to the non-convex property of the optimization problem in deep learning, it is important to understand its loss landscape while proposing new learning algorithms tailored to deep neural networks. We proposed several useful learning algorithms, including Madam and signSGD optimizers.
 
 ### Madam Optimizer - Multiplicative Weight Update for Deep Learning [(link)](https://arxiv.org/abs/2006.14560)
 
@@ -22,7 +24,7 @@ We propose a multiplicative weight update method Madam - a multiplicative versio
 We propose signSGD that updates the weights only using the sign of each minibatch stochastic gradient. Through theoretical analysis, we prove that signSGD matches the SGD-level convergence rate. On the practical side, we find that the momentum counterpart of signSGD is able to match the accuracy and convergence speed of Adam on deep Imagenet models.
 
 # Resource Constraint Optimization
-
+Learning becomes computationally expensive with the increase of network sizes. This highlights the importance of resource constraint optimization, which aims to reduce resource consumption during training while preserving the quality of the solutions. We deigned effective learning algorithms for specific computational scenarios, such as distributed training and low-precision training.
 ### LNS-Madam: Low-Precision Training in Logarithmic Number System using Multiplicative Weight Update [(link)](https://arxiv.org/abs/2106.13914)
 
 <div class="col-sm mt-3 mt-md-0 mx-auto" style="max-width: 400px;">
@@ -69,7 +71,7 @@ To be filled.
 
 To be filled.
 
-# Non-Convex Optimization Analysis
+# Landscape Analysis
 
 To be filled.
 
